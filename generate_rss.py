@@ -1,53 +1,62 @@
 #!/usr/bin/env python3
 """
-Automated RSS generator for Vimal & Sons
-Reads posts from posts.txt and generates RSS feed
+Fixed RSS generator for Vimal & Sons
+Reads posts with titles and URLs from posts.txt
+Format: Title|URL (one per line)
 """
 
 import xml.etree.ElementTree as ET
-import urllib.parse
 from datetime import datetime, timedelta
 import os
 
 def read_posts_file():
-    """Read posts from posts.txt file"""
+    """Read posts from posts.txt file with title|url format"""
     posts_data = []
     
     try:
         with open('posts.txt', 'r', encoding='utf-8') as f:
             lines = [line.strip() for line in f.readlines() if line.strip()]
             
-        for i, title in enumerate(lines):
-            # Convert title to URL format
-            url_title = urllib.parse.quote_plus(title.replace(' ', '+'))
+        for i, line in enumerate(lines):
+            if '|' in line:
+                # New format: Title|URL
+                title, url = line.split('|', 1)
+                title = title.strip()
+                url = url.strip()
+            else:
+                # Fallback: just title (old format)
+                title = line.strip()
+                # Try to construct URL (this might still have issues)
+                url_safe_title = title.replace(' ', '+').replace('-', '%2D')
+                url = f'https://publish.obsidian.md/16061995/Publish/{url_safe_title}'
             
             posts_data.append({
                 'title': title,
                 'description': f'Latest insights on {title.lower()}',
-                'url': f'https://publish.obsidian.md/16061995/Publish/{url_title}',
+                'url': url,
                 'date': datetime.now() - timedelta(days=i)  # Newest first
             })
             
     except FileNotFoundError:
         print("⚠️  posts.txt not found, using default posts")
-        # Fallback to your current posts
+        # Fallback to your current posts with correct URLs
         posts_data = [
             {
                 'title': 'Time in the Market - Not Timing the Market',
                 'description': 'Investment insights on the importance of staying invested rather than trying to time market movements.',
-                'url': 'https://publish.obsidian.md/16061995/Publish/Time+in+the+Market+-+Not+Timing+the+Market',
+                'url': 'https://publish.obsidian.md/16061995/Publish/Time%20in%20the%20Market%20-%20Not%20Timing%20the%20Market',
                 'date': datetime.now()
             },
             {
                 'title': 'How to Time the Market',
                 'description': 'Exploring market timing strategies and their effectiveness in investment planning.',
-                'url': 'https://publish.obsidian.md/16061995/Publish/How+to+Time+the+Market',
+                'url': 'https://publish.obsidian.md/16061995/Publish/How%20to%20Time%20the%20Market',
                 'date': datetime.now() - timedelta(days=1)
             },
             {
-                'title': 'Book Highlights - Against the Gods',
-                'description': 'Key insights and highlights from Peter L. Bernstein\'s book "Against the Gods" on risk and decision-making.',
-                'url': 'https://publish.obsidian.md/16061995/Publish/Book+Highlights',
+                'title': 'Book Highlights',
+                'description': 'Key insights and highlights from investment and finance books.',
+                'url': 'https://publish.obsidian.md/16061995/Publish/Book%20Highlights',
                 'date': datetime.now() - timedelta(days=2)
             }
         ]
@@ -94,10 +103,11 @@ def generate_rss_feed():
     print(f"📅 Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"📝 Total posts: {len(posts)}")
     
-    # List the posts
+    # List the posts with URLs
     print("\n📋 Current posts in feed:")
     for i, post in enumerate(posts[:10], 1):
         print(f"  {i}. {post['title']}")
+        print(f"     → {post['url']}")
 
 if __name__ == "__main__":
     generate_rss_feed()
