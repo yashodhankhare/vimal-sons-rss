@@ -1,7 +1,23 @@
-<item>
-  <title>Your Post Title</title>
-  <description>Brief description or excerpt of your post</description>
-  <link>https://publish.obsidian.md/16061995/Publish/YourPostTitle</link>
-  <guid>https://publish.obsidian.md/16061995/Publish/YourPostTitle</guid>
-  <pubDate>Fri, 04 Jul 2025 00:00:00 GMT</pubDate>
-</item>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vimal &amp; Sons</title>
+    <description>Updates from Vimal &amp; Sons</description>
+    <link>https://publish.obsidian.md/16061995/Publish/Index</link>
+    <atom:link href="https://yashodhankhare.github.io/vimal-sons-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Jul 2025 12:00:00 GMT</lastBuildDate>
+    
+    <!-- Add items for each new post -->
+    <item>
+      <title>Your Post Title</title>
+      <description>Brief description or excerpt of your post</description>
+      <link>https://publish.obsidian.md/16061995/Publish/YourPostTitle</link>
+      <guid>https://publish.obsidian.md/16061995/Publish/YourPostTitle</guid>
+      <pubDate>Fri, 04 Jul 2025 00:00:00 GMT</pubDate>
+    </item>
+    
+    <!-- Repeat item blocks for each new post -->
+    
+  </channel>
+</rss>
