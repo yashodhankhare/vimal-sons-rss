@@ -10,11 +10,16 @@
     
     <!-- Add items for each new post -->
     <item>
-      <title>Your Post Title</title>
-      <description>Brief description or excerpt of your post</description>
-      <link>https://publish.obsidian.md/16061995/Publish/YourPostTitle</link>
-      <guid>https://publish.obsidian.md/16061995/Publish/YourPostTitle</guid>
-      <pubDate>Fri, 04 Jul 2025 00:00:00 GMT</pubDate>
+      <item>
+  <title>Your Actual Post Title</title>
+  <description>Brief excerpt from your Obsidian content...</description>
+  [***Time in the Market - Not Timing the Market***](https://publish.obsidian.md/16061995/Publish/Time+in+the+Market+-+Not+Timing+the+Market#Time+in+the+Market+-+Not+Timing+the+Market)
+  <guid>https://publish.obsidian.md/16061995/Publish/YourActualPageName
+  [***How to Time the Market***](https://publish.obsidian.md/16061995/Publish/How+to+Time+the+Market)
+    [***Book Highlights***](https://publish.obsidian.md/16061995/Publish/Book+Highlights#Book+Name+Against+the+Gods+%E2%80%94+Peter+L.+Bernstein)
+  </guid>
+  <pubDate>Sat, 06 Jul 2025 00:00:00 GMT</pubDate>
+</item>
     </item>
     
     <!-- Repeat item blocks for each new post -->
