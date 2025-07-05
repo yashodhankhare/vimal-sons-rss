@@ -1,39 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vimal &amp; Sons</title>
-    <description>Updates from Vimal &amp; Sons</description>
+    <description>Updates from Vimal &amp; Sons Investment Garden</description>
     <link>https://publish.obsidian.md/16061995/Publish/Index</link>
-    <atom:link href="https://yashodhankhare.github.io/vimal-sons-rss/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://yashodhankhare.github.io/vimal-sons-rss/feed.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Jul 2025 12:00:00 GMT</lastBuildDate>
-    
-    <!-- Post 1: Time in the Market -->
+    <lastBuildDate>Sat, 05 Jul 2025 09:11:27 GMT</lastBuildDate>
     <item>
       <title>Time in the Market - Not Timing the Market</title>
-      <description>Investment insights on the importance of staying invested rather than trying to time market movements.</description>
-      <link>https://publish.obsidian.md/16061995/Publish/Time+in+the+Market+-+Not+Timing+the+Market</link>
-      <guid>https://publish.obsidian.md/16061995/Publish/Time+in+the+Market+-+Not+Timing+the+Market</guid>
-      <pubDate>Sat, 05 Jul 2025 12:00:00 GMT</pubDate>
+      <description>Latest insights on time in the market - not timing the market</description>
+      <link>https://publish.obsidian.md/16061995/Publish/Time%2Bin%2Bthe%2BMarket%2B-%2BNot%2BTiming%2Bthe%2BMarket</link>
+      <guid>https://publish.obsidian.md/16061995/Publish/Time%2Bin%2Bthe%2BMarket%2B-%2BNot%2BTiming%2Bthe%2BMarket</guid>
+      <pubDate>Sat, 05 Jul 2025 09:11:27 GMT</pubDate>
     </item>
-    
-    <!-- Post 2: How to Time the Market -->
     <item>
       <title>How to Time the Market</title>
-      <description>Exploring market timing strategies and their effectiveness in investment planning.</description>
-      <link>https://publish.obsidian.md/16061995/Publish/How+to+Time+the+Market</link>
-      <guid>https://publish.obsidian.md/16061995/Publish/How+to+Time+the+Market</guid>
-      <pubDate>Fri, 04 Jul 2025 12:00:00 GMT</pubDate>
+      <description>Latest insights on how to time the market</description>
+      <link>https://publish.obsidian.md/16061995/Publish/How%2Bto%2BTime%2Bthe%2BMarket</link>
+      <guid>https://publish.obsidian.md/16061995/Publish/How%2Bto%2BTime%2Bthe%2BMarket</guid>
+      <pubDate>Fri, 04 Jul 2025 09:11:27 GMT</pubDate>
     </item>
-    
-    <!-- Post 3: Book Highlights -->
     <item>
-      <title>Book Highlights - Against the Gods</title>
-      <description>Key insights and highlights from Peter L. Bernstein's book "Against the Gods" on risk and decision-making.</description>
-      <link>https://publish.obsidian.md/16061995/Publish/Book+Highlights</link>
-      <guid>https://publish.obsidian.md/16061995/Publish/Book+Highlights</guid>
-      <pubDate>Thu, 03 Jul 2025 12:00:00 GMT</pubDate>
+      <title>Book Highlights</title>
+      <description>Latest insights on book highlights</description>
+      <link>https://publish.obsidian.md/16061995/Publish/Book%2BHighlights</link>
+      <guid>https://publish.obsidian.md/16061995/Publish/Book%2BHighlights</guid>
+      <pubDate>Thu, 03 Jul 2025 09:11:27 GMT</pubDate>
     </item>
-    
   </channel>
 </rss>
